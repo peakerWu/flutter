@@ -7,6 +7,7 @@ import './demo/basic_demo.dart';
 // import './demo/hello_demo.dart';
 import './demo/layout_demo.dart';
 import './demo/view_demo.dart';
+import './demo/navigator_demo.dart';
 
 void main() {
   
@@ -18,7 +19,13 @@ class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Home(),
+      debugShowCheckedModeBanner: false,
+      // home: NavigatorDemo(),
+      initialRoute: '/', // 初始路由是一个斜线，
+      routes: {
+        '/': (BuildContext contet) => Home(),
+        '/about': (BuildContext context) => Page(title: 'about',)
+      },
       theme: ThemeData(
         primarySwatch: Colors.yellow,
         highlightColor: Color.fromRGBO(255, 255, 255, 0.5),
