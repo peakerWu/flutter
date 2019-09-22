@@ -8,6 +8,7 @@ import './demo/basic_demo.dart';
 import './demo/layout_demo.dart';
 import './demo/view_demo.dart';
 import './demo/navigator_demo.dart';
+import './demo/form_demo.dart';
 
 void main() {
   
@@ -21,10 +22,11 @@ class App extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       // home: NavigatorDemo(),
-      initialRoute: '/', // 初始路由是一个斜线，
+      initialRoute: '/form', // 初始路由是一个斜线，
       routes: {
-        '/': (BuildContext contet) => Home(),
-        '/about': (BuildContext context) => Page(title: 'about',)
+        '/': (contet) => Home(),
+        '/about': (context) => Page(title: 'about',),
+        '/form': (context) => FormDemo()
       },
       theme: ThemeData(
         primarySwatch: Colors.yellow,
