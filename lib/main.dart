@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:helloworld/demo/view_demo.dart';
 import './demo/drawer_demo.dart';
 import './demo/bottom_navigation_bar_demo.dart';
 import './demo/listView_demo.dart';
@@ -9,6 +8,7 @@ import './demo/layout_demo.dart';
 import './demo/view_demo.dart';
 import './demo/navigator_demo.dart';
 import './demo/form_demo.dart';
+import './demo/theme_demo.dart';
 
 void main() {
   
@@ -22,11 +22,12 @@ class App extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       // home: NavigatorDemo(),
-      initialRoute: '/form', // 初始路由是一个斜线，
+      initialRoute: '/theme', // 初始路由是一个斜线，
       routes: {
         '/': (contet) => Home(),
         '/about': (context) => Page(title: 'about',),
-        '/form': (context) => FormDemo()
+        '/form': (context) => FormDemo(),
+        '/theme': (context) => ThemeColorDemo()
       },
       theme: ThemeData(
         primarySwatch: Colors.yellow,
