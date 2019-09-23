@@ -9,6 +9,7 @@ import './demo/view_demo.dart';
 import './demo/navigator_demo.dart';
 import './demo/form_demo.dart';
 import './demo/theme_demo.dart';
+import './demo/material-components.dart';
 
 void main() {
   
@@ -22,12 +23,13 @@ class App extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       // home: NavigatorDemo(),
-      initialRoute: '/theme', // 初始路由是一个斜线，
+      initialRoute: '/material', // 初始路由是一个斜线，
       routes: {
         '/': (contet) => Home(),
         '/about': (context) => Page(title: 'about',),
         '/form': (context) => FormDemo(),
-        '/theme': (context) => ThemeColorDemo()
+        '/theme': (context) => ThemeColorDemo(),
+        '/material': (context) => MaterialComponentsDemo(),
       },
       theme: ThemeData(
         primarySwatch: Colors.yellow,
