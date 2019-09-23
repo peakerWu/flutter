@@ -21,9 +21,7 @@ class LayoutDemo extends StatelessWidget {
         SizedBox(
           height: 100,
         ),
-        SizedBox(
-          width: 100,
-          height: 100,
+        Expanded(
           child: Container(
             decoration: BoxDecoration(
               color: Color.fromRGBO(3, 54, 255, 1.0),
