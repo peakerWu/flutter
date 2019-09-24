@@ -7,6 +7,7 @@ import './datetime_demo.dart';
 import './dialog_demo.dart';
 import './alert_dialog_demo.dart';
 import './bottom_sheet_demo.dart';
+import './expansion_panel_demo.dart';
 
 class MaterialComponentsDemo extends StatelessWidget {
 
@@ -32,6 +33,7 @@ class MaterialComponentsDemo extends StatelessWidget {
         body: Container(
           child: ListView(
             children: <Widget>[
+              ListItem(title: 'ExpansionPanelDemo', page: ExpansionPanelDemo()),
               ListItem(title: 'BottomSheetDemo', page: BottomSheetDemo()),
               ListItem(title: 'AlertDialogDemo', page: AlertDialogDemo()),
               ListItem(title: 'SimpleDialogDemo', page: SimpleDialogDemo()),
