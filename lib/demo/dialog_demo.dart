@@ -61,7 +61,7 @@ class _SimpleDialogDemoState extends State<SimpleDialogDemo> {
            _choice = 'C'; 
           });
         break;
-
+      
       default:
     }
   }
@@ -95,3 +95,4 @@ class _SimpleDialogDemoState extends State<SimpleDialogDemo> {
       ),
     );
   }
+}
